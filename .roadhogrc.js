@@ -1,0 +1,17 @@
+export default {
+  "entry": "src/index.js",
+  "disableCSSModules": false,
+  "publicPath": "/",
+  "outputPath": "/dist",
+  "extraBabelPlugins": [],
+  "extraPostCSSPlugins": [],
+  "autoprefixer": null,
+  "proxy": null,
+  "externals": null,
+  "library": null,
+  "libraryTarget": "var",
+  "multipage": false,
+  "define": null,
+  "env": null,
+  "theme": null,
+}

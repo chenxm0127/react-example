@@ -1,0 +1,24 @@
+{
+  "name": "react-example",
+  "version": "1.0.0",
+  "description": "react project",
+  "scripts": {
+    "mock-server": "json-server ./server/db.json -p 3008",
+    "mock-db": "json-server ./server/db.js -p 3008",
+    "dev": "roadhog server"
+  },
+  "author": "chenxiaoming",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "mockjs": "^1.0.1-beta3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "roadhog": "^0.6.0"
+  },
+  "devDependencies": {
+    "roadhog": "^0.6.0"
+  }
+}
