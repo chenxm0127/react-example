@@ -28,6 +28,24 @@ class UserList extends React.Component {
 
   handleDel (user) {
     console.log(user);
+    const confirmed = confirm(`确定要删除用户 ${user.name} 吗？`);
+
+    if (confirmed) {
+      fetch('http://localhost:3008/user/' + user.id, {
+        method: 'delete'
+      })
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          userList: this.state.userList.filter(item => item.id !== user.id)
+        });
+        alert('删除用户成功');
+      })
+      .catch(err => {
+        console.error(err);
+        alert('删除用户失败');
+      });
+    }
   }
 
   render() {

@@ -10,6 +10,7 @@
   "author": "chenxiaoming",
   "license": "ISC",
   "dependencies": {
+    "echarts": "^3.5.4",
     "jquery": "^3.2.1",
     "mockjs": "^1.0.1-beta3",
     "react": "^15.5.4",
